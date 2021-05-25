@@ -1,0 +1,4 @@
+pyqt5
+sqlite3
+datetime
+fpdf

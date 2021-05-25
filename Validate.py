@@ -17,14 +17,14 @@ class Validation:
 		self.res = ''.join(
 		    random.choices( string.ascii_uppercase + string.ascii_lowercase + string.digits, k=24 )
 		    )
-		# print( "The generated random string : " + str( self.res ) )
+		print( "The generated random string : " + str( self.res ) )
 		self.name = name
 		# if self.check_connection():
 		try:
 
 			fromaddr = "gdascostingsystem@gmail.com"
-			toaddr = "kashyap@gdasindustries.com"
-			# toaddr = "kishanpatel31199@gmail.com"
+
+			toaddr = "kishanpatel31199@gmail.com"
 
 			# instance of MIMEMultipart
 			msg = MIMEMultipart()
@@ -50,7 +50,7 @@ class Validation:
 			s.starttls()
 
 			# Authentication
-			s.login( fromaddr, "oczamtlaevzthdnf" )
+			s.login( fromaddr, "Password" )
 
 			# Converts the Multipart msg into a string
 			text = msg.as_string()

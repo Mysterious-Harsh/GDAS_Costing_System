@@ -1,0 +1,1141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GDAS Costing System</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../Images/GDAS_Logo.ico</normaloff>../Images/GDAS_Logo.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>20</number>
+    </property>
+    <property name="leftMargin">
+     <number>40</number>
+    </property>
+    <property name="topMargin">
+     <number>40</number>
+    </property>
+    <property name="rightMargin">
+     <number>40</number>
+    </property>
+    <property name="bottomMargin">
+     <number>40</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+background-color:rgb(255, 255, 255);
+
+}
+QWidget{
+background-color:rgb(255, 255, 255);
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <widget class="QWidget" name="CurrencyPage">
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+
+{
+	color: rgb(0, 0, 0);
+	font: bold 16pt &quot;Calibri&quot;;
+	min-width: 50px;
+	min-height: 40px;
+	border-radius: 4px;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #f6f7fa, stop: 1 #dadbde);
+}
+
+QPushButton::pressed {
+   background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.506, y2:1, stop:0 rgba(180, 199, 231, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton::hover {
+	background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.506, y2:1, stop:0 rgba(180, 199, 231, 255), stop:1 rgba(255, 255, 255, 255));
+
+}
+
+QPushButton::focus {
+	border: 1px solid rgb(0, 85, 255);
+
+
+}
+
+QLabel
+{
+	background-color: rgb(180, 199, 231);
+	min-width: 100px;
+min-height:30px;
+	color: rgb(0, 0, 0);
+	font: bold 16pt &quot;Calibri&quot;;
+	border: 1px solid black;
+}
+
+QLineEdit
+{
+min-height:30px;
+	color: rgb(0, 0, 0);
+	font: bold 14pt &quot;Calibri&quot;;
+border: 1px solid rgb(85, 170, 255);
+}
+
+QLineEdit::focus {
+	border: 1px solid rgb(0, 85, 255);
+}
+
+
+QTableWidget
+{
+color: rgb(0, 0, 0);
+
+	font: bold 14pt &quot;Calibri&quot;;
+	alternate-background-color: rgb(180, 199, 231);
+}
+
+QTableWidget::focus
+{
+	border: 1px solid rgb(0, 85, 255);
+}
+
+QHeaderView::section
+{
+	background-color: rgb(62, 87, 160);
+color: white;
+font: bold 16pt &quot;Calibri&quot;;
+
+}
+
+QDateTimeEdit
+{
+color: rgb(0, 0, 0);
+min-height:30px;
+	font: bold 14pt &quot;Calibri&quot;;
+}
+QComboBox
+{
+color: rgb(0, 0, 0);
+
+min-height:30px;
+	font: bold 14pt &quot;Calibri&quot;;
+
+}
+
+
+</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QFormLayout" name="formLayout_2">
+             <property name="fieldGrowthPolicy">
+              <enum>QFormLayout::ExpandingFieldsGrow</enum>
+             </property>
+             <property name="horizontalSpacing">
+              <number>10</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>10</number>
+             </property>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Currency</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="CurrencyNameENT"/>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>Rate</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="CurrencyRateENT"/>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>USD</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_3">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="text">
+                <string>1</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="1" rowspan="3">
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QTableWidget" name="CurrencyTable">
+               <property name="focusPolicy">
+                <enum>Qt::ClickFocus</enum>
+               </property>
+               <property name="editTriggers">
+                <set>QAbstractItemView::NoEditTriggers</set>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::SingleSelection</enum>
+               </property>
+               <property name="selectionBehavior">
+                <enum>QAbstractItemView::SelectRows</enum>
+               </property>
+               <attribute name="horizontalHeaderDefaultSectionSize">
+                <number>150</number>
+               </attribute>
+               <attribute name="horizontalHeaderHighlightSections">
+                <bool>false</bool>
+               </attribute>
+               <attribute name="verticalHeaderHighlightSections">
+                <bool>false</bool>
+               </attribute>
+               <row>
+                <property name="text">
+                 <string>1</string>
+                </property>
+               </row>
+               <column>
+                <property name="text">
+                 <string>Currency</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Rate</string>
+                </property>
+               </column>
+               <item row="0" column="0">
+                <property name="text">
+                 <string>USD</string>
+                </property>
+               </item>
+               <item row="0" column="1">
+                <property name="text">
+                 <string>1</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="2" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="CurrencySavePBT">
+               <property name="text">
+                <string>Save</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="CurrencyEditPBT">
+               <property name="text">
+                <string>Edit</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="CurrencyDeletePBT">
+               <property name="text">
+                <string>Delete</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="CurrencyClosePBT">
+               <property name="text">
+                <string>Close</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="TCPage">
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+
+{
+	color: rgb(0, 0, 0);
+	font: bold 16pt &quot;Calibri&quot;;
+	min-width: 50px;
+	min-height: 40px;
+	border-radius: 4px;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #f6f7fa, stop: 1 #dadbde);
+}
+
+QPushButton::pressed {
+   background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.506, y2:1, stop:0 rgba(180, 199, 231, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton::hover {
+	background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.506, y2:1, stop:0 rgba(180, 199, 231, 255), stop:1 rgba(255, 255, 255, 255));
+
+}
+
+QPushButton::focus {
+	border: 1px solid rgb(0, 85, 255);
+
+
+}
+
+QLabel
+{
+	background-color: rgb(180, 199, 231);
+	min-width: 100px;
+min-height:30px;
+	color: rgb(0, 0, 0);
+	font: bold 16pt &quot;Calibri&quot;;
+	border: 1px solid black;
+}
+
+QLineEdit
+{
+min-height:30px;
+	color: rgb(0, 0, 0);
+	font: bold 14pt &quot;Calibri&quot;;
+border: 1px solid rgb(85, 170, 255);
+}
+
+QLineEdit::focus {
+	border: 1px solid rgb(0, 85, 255);
+}
+
+
+QTableWidget
+{
+color: rgb(0, 0, 0);
+
+	font: bold 14pt &quot;Calibri&quot;;
+	alternate-background-color: rgb(180, 199, 231);
+}
+
+QTableWidget::focus
+{
+	border: 1px solid rgb(0, 85, 255);
+}
+
+QHeaderView::section
+{
+	background-color: rgb(62, 87, 160);
+color: white;
+font: bold 16pt &quot;Calibri&quot;;
+
+}
+
+QDateTimeEdit
+{
+color: rgb(0, 0, 0);
+max-height:25px;
+	font: bold 14pt &quot;Calibri&quot;;
+}
+QComboBox
+{
+color: rgb(0, 0, 0);
+min-width:250px;
+min-height:30px;
+	font: bold 14pt &quot;Calibri&quot;;
+
+}
+
+
+</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>Terms &amp; Conditions</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <property name="spacing">
+                <number>10</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string>Name</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="TCNameENT"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>Select T&amp;C</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="TCSelectCB"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="TC1ENT"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="TC2ENT"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="TC3ENT"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="TC4ENT"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="TC5ENT"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="TC6ENT"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="TC7ENT"/>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <property name="spacing">
+                <number>10</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="TCSavePBT">
+                 <property name="text">
+                  <string>Save</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="TCResetPBT">
+                 <property name="text">
+                  <string>Reset</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="TCDeletePBT">
+                 <property name="text">
+                  <string>Delete</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="TCClosePBT">
+                 <property name="text">
+                  <string>Close</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="PrintPage">
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+
+{
+	color: rgb(0, 0, 0);
+	font: bold 16pt &quot;Calibri&quot;;
+	min-width: 50px;
+	min-height: 40px;
+	border-radius: 4px;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #f6f7fa, stop: 1 #dadbde);
+}
+
+QPushButton::pressed {
+   background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.506, y2:1, stop:0 rgba(180, 199, 231, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton::hover {
+	background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.506, y2:1, stop:0 rgba(180, 199, 231, 255), stop:1 rgba(255, 255, 255, 255));
+
+}
+
+QPushButton::focus {
+	border: 1px solid rgb(0, 85, 255);
+
+
+}
+
+QLabel
+{
+	background-color: rgb(180, 199, 231);
+	min-width: 100px;
+min-height:30px;
+	color: rgb(0, 0, 0);
+	font: bold 16pt &quot;Calibri&quot;;
+	border: 1px solid black;
+}
+
+QLineEdit
+{
+min-height:30px;
+	color: rgb(0, 0, 0);
+	font: bold 14pt &quot;Calibri&quot;;
+border: 1px solid rgb(85, 170, 255);
+}
+
+QLineEdit::focus {
+	border: 1px solid rgb(0, 85, 255);
+}
+
+
+QTableWidget
+{
+color: rgb(0, 0, 0);
+
+	font: bold 14pt &quot;Calibri&quot;;
+	alternate-background-color: rgb(180, 199, 231);
+}
+
+QTableWidget::focus
+{
+	border: 1px solid rgb(0, 85, 255);
+}
+
+QHeaderView::section
+{
+	background-color: rgb(62, 87, 160);
+color: white;
+font: bold 16pt &quot;Calibri&quot;;
+
+}
+
+QDateTimeEdit
+{
+color: rgb(0, 0, 0);
+max-height:25px;
+	font: bold 14pt &quot;Calibri&quot;;
+}
+QComboBox
+{
+color: rgb(0, 0, 0);
+min-width:250px;
+min-height:30px;
+	font: bold 14pt &quot;Calibri&quot;;
+
+}
+
+
+</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <property name="leftMargin">
+              <number>10</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="rightMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item row="1" column="2">
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>Date</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <widget class="QLineEdit" name="PrintDateENT">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="PrintRefENT">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>Qta No.</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>Ref No.</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>Name</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="PrintNameENT">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLineEdit" name="PrintQtaENT">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>Grand Total</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="PrintGrandENT">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>T &amp; C</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="3">
+              <widget class="QComboBox" name="PrintTCCB"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <property name="leftMargin">
+              <number>10</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="rightMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="PrintWoSRPBT">
+               <property name="text">
+                <string>Without Sqm Rate</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="PrintWSRPBT">
+               <property name="text">
+                <string>With Sqm Rate</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="PrintMALPBT">
+               <property name="text">
+                <string>Print Material List</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="PrintClosePBT">
+               <property name="text">
+                <string>Close</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="GlassPage">
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+
+{
+	color: rgb(0, 0, 0);
+	font: bold 16pt &quot;Calibri&quot;;
+	min-width: 50px;
+	min-height: 40px;
+	border-radius: 4px;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #f6f7fa, stop: 1 #dadbde);
+}
+
+QPushButton::pressed {
+   background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.506, y2:1, stop:0 rgba(180, 199, 231, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton::hover {
+	background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.506, y2:1, stop:0 rgba(180, 199, 231, 255), stop:1 rgba(255, 255, 255, 255));
+
+}
+
+QPushButton::focus {
+	border: 1px solid rgb(0, 85, 255);
+
+
+}
+
+QLabel
+{
+	background-color: rgb(180, 199, 231);
+	min-width: 100px;
+min-height:30px;
+	color: rgb(0, 0, 0);
+	font: bold 16pt &quot;Calibri&quot;;
+	border: 1px solid black;
+}
+
+QLineEdit
+{
+min-height:30px;
+	color: rgb(0, 0, 0);
+	font: bold 14pt &quot;Calibri&quot;;
+border: 1px solid rgb(85, 170, 255);
+}
+
+QLineEdit::focus {
+	border: 1px solid rgb(0, 85, 255);
+}
+
+
+QTableWidget
+{
+color: rgb(0, 0, 0);
+
+	font: bold 14pt &quot;Calibri&quot;;
+	alternate-background-color: rgb(180, 199, 231);
+}
+
+QTableWidget::focus
+{
+	border: 1px solid rgb(0, 85, 255);
+}
+
+QHeaderView::section
+{
+	background-color: rgb(62, 87, 160);
+color: white;
+font: bold 16pt &quot;Calibri&quot;;
+
+}
+
+QDateTimeEdit
+{
+color: rgb(0, 0, 0);
+max-height:25px;
+	font: bold 14pt &quot;Calibri&quot;;
+}
+QComboBox
+{
+color: rgb(0, 0, 0);
+
+max-height:25px;
+	font: bold 14pt &quot;Calibri&quot;;
+
+}
+
+
+</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <item row="4" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="GlassSavePBT">
+               <property name="text">
+                <string>Save</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="GlassEditPBT">
+               <property name="text">
+                <string>Edit</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="GlassDeletePBT">
+               <property name="text">
+                <string>Delete</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="GlassClosePBT">
+               <property name="text">
+                <string>Close</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="0">
+            <layout class="QFormLayout" name="formLayout_3">
+             <property name="fieldGrowthPolicy">
+              <enum>QFormLayout::ExpandingFieldsGrow</enum>
+             </property>
+             <property name="horizontalSpacing">
+              <number>10</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>10</number>
+             </property>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>Name</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="GlassNameENT"/>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>Rate</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="GlassRateENT"/>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>ID</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="GlassIDENT">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>421</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="1" rowspan="5">
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <widget class="QTableWidget" name="GlassTable">
+               <property name="focusPolicy">
+                <enum>Qt::ClickFocus</enum>
+               </property>
+               <property name="editTriggers">
+                <set>QAbstractItemView::NoEditTriggers</set>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::SingleSelection</enum>
+               </property>
+               <property name="selectionBehavior">
+                <enum>QAbstractItemView::SelectRows</enum>
+               </property>
+               <attribute name="horizontalHeaderDefaultSectionSize">
+                <number>150</number>
+               </attribute>
+               <attribute name="horizontalHeaderHighlightSections">
+                <bool>false</bool>
+               </attribute>
+               <attribute name="verticalHeaderHighlightSections">
+                <bool>false</bool>
+               </attribute>
+               <column>
+                <property name="text">
+                 <string>ID</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Glass Name</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Rate</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>CurrencyNameENT</tabstop>
+  <tabstop>CurrencyRateENT</tabstop>
+  <tabstop>CurrencySavePBT</tabstop>
+  <tabstop>CurrencyEditPBT</tabstop>
+  <tabstop>CurrencyDeletePBT</tabstop>
+  <tabstop>CurrencyClosePBT</tabstop>
+  <tabstop>TCNameENT</tabstop>
+  <tabstop>TCSelectCB</tabstop>
+  <tabstop>TC1ENT</tabstop>
+  <tabstop>TC2ENT</tabstop>
+  <tabstop>TC3ENT</tabstop>
+  <tabstop>TC4ENT</tabstop>
+  <tabstop>TC5ENT</tabstop>
+  <tabstop>TC6ENT</tabstop>
+  <tabstop>TC7ENT</tabstop>
+  <tabstop>TCSavePBT</tabstop>
+  <tabstop>TCResetPBT</tabstop>
+  <tabstop>TCDeletePBT</tabstop>
+  <tabstop>TCClosePBT</tabstop>
+  <tabstop>PrintTCCB</tabstop>
+  <tabstop>PrintWoSRPBT</tabstop>
+  <tabstop>PrintWSRPBT</tabstop>
+  <tabstop>PrintMALPBT</tabstop>
+  <tabstop>PrintClosePBT</tabstop>
+  <tabstop>GlassIDENT</tabstop>
+  <tabstop>GlassNameENT</tabstop>
+  <tabstop>GlassRateENT</tabstop>
+  <tabstop>GlassSavePBT</tabstop>
+  <tabstop>GlassEditPBT</tabstop>
+  <tabstop>GlassDeletePBT</tabstop>
+  <tabstop>GlassClosePBT</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

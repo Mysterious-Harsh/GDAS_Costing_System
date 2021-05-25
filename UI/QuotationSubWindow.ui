@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1520</width>
+    <height>855</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GDAS Costing System</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../Images/GDAS_Logo.ico</normaloff>../Images/GDAS_Logo.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>40</number>
+    </property>
+    <property name="topMargin">
+     <number>40</number>
+    </property>
+    <property name="rightMargin">
+     <number>40</number>
+    </property>
+    <property name="bottomMargin">
+     <number>40</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+background-color:rgb(255, 255, 255);
+
+}
+QWidget{
+background-color:rgb(255, 255, 255);
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <widget class="QWidget" name="page">
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+
+{
+	color: rgb(0, 0, 0);
+	font: bold 16pt &quot;Calibri&quot;;
+	min-width: 50px;
+	min-height: 40px;
+	border-radius: 4px;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #f6f7fa, stop: 1 #dadbde);
+}
+
+QPushButton::pressed {
+   background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.506, y2:1, stop:0 rgba(180, 199, 231, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton::hover {
+	background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.506, y2:1, stop:0 rgba(180, 199, 231, 255), stop:1 rgba(255, 255, 255, 255));
+
+}
+
+QPushButton::focus {
+	border: 1px solid rgb(0, 85, 255);
+
+
+}
+
+QLabel
+{
+	background-color: rgb(180, 199, 231);
+	max-width: 250px;
+max-height:30px;
+	color: rgb(0, 0, 0);
+	font: bold 14pt &quot;Calibri&quot;;
+	border: 1px solid black;
+}
+
+QLineEdit
+{
+max-height:30px;
+max-width: 250px;
+	color: rgb(0, 0, 0);
+	font: bold 14pt &quot;Calibri&quot;;
+border: 1px solid rgb(85, 170, 255);
+}
+
+QLineEdit::focus {
+	border: 1px solid rgb(0, 85, 255);
+}
+
+
+QTreeWidget
+{
+color: rgb(0, 0, 0);
+	font: bold 12pt &quot;Calibri&quot;;
+	alternate-background-color: rgb(180, 199, 231);
+}
+
+QTreeWidget::focus
+{
+	border: 1px solid rgb(0, 85, 255);
+}
+QTreeWidget::item { border-bottom: 1px solid black;}
+QHeaderView::section
+{
+	/*background-color: rgb(66, 87, 152);*/
+	background-color: rgb(62, 87, 160);
+color: white;
+font: bold 14pt &quot;Calibri&quot;;
+
+}
+
+QDateTimeEdit
+{
+color: rgb(0, 0, 0);
+min-width:250;
+max-height:30px;
+	font: bold 14pt &quot;Calibri&quot;;
+}
+QComboBox
+{
+color: rgb(0, 0, 0);
+max-height:30px;
+font: bold 14pt &quot;Calibri&quot;;
+min-width:350px;
+
+
+}
+QCheckBox
+{
+	background-color: rgb(180, 199, 231);
+	max-width: 200px;
+max-height:30px;
+	color: rgb(0, 0, 0);
+	font: bold 14pt &quot;Calibri&quot;;
+	border: 1px solid black;
+}
+
+
+</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Product</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="QuoProductCB">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maxVisibleItems">
+                <number>50</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>Metal Rate</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProMRENT">
+               <property name="inputMask">
+                <string/>
+               </property>
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>Width (Mtr)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProWidthENT"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Height (Mtr)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProHeightENT"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>Quantity</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProQtyENT"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QCheckBox" name="QuoProVentCB">
+               <property name="text">
+                <string>Vent Height</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProVHENT">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>Height with Vent</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProHWVENT">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>Vent Sqm</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProVSENT">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_11">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Total hight+ vent</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProTHWVENT">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_13">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Total sqm+ vent</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProTSWVENT">
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QCheckBox" name="QuoProFixCB">
+               <property name="text">
+                <string>Fix Height</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProFHENT"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>Height with fix</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProHWFENT"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>Fix Sqm</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProFSENT"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_16">
+               <property name="text">
+                <string>Total height+Fix</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProTHWFENT"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>Total Sqm+fix</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProTSWFENT"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+	background-color: rgb(180, 199, 231);
+	max-width:350px;
+max-height:30px;
+	color: rgb(0, 0, 0);
+	font: bold 14pt &quot;Calibri&quot;;
+	border: 1px solid black;
+}</string>
+               </property>
+               <property name="text">
+                <string>Height without vent and fix</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProHWVFENT"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+	background-color: rgb(180, 199, 231);
+	max-width:350;
+max-height:30px;
+	color: rgb(0, 0, 0);
+	font: bold 14pt &quot;Calibri&quot;;
+	border: 1px solid black;
+}</string>
+               </property>
+               <property name="text">
+                <string>Total Height without vent and fix</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProTHWVFENT"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_12">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+	background-color: rgb(180, 199, 231);
+	max-width:350;
+max-height:30px;
+	color: rgb(0, 0, 0);
+	font: bold 14pt &quot;Calibri&quot;;
+	border: 1px solid black;
+}</string>
+               </property>
+               <property name="text">
+                <string>Total sqm without vent and fix</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProTSWVFENT"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_23">
+               <property name="text">
+                <string>Glass</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="QuoProGlassCB">
+               <property name="styleSheet">
+                <string notr="true">QComboBox
+{
+color: rgb(0, 0, 0);
+max-height:30px;
+font: bold 14pt &quot;Calibri&quot;;
+min-width:300px;
+
+
+}</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProGlassrateENT"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_17">
+               <property name="text">
+                <string>Total Width</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProTWENT"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_18">
+               <property name="text">
+                <string>Total Height</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProTHENT"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_19">
+               <property name="text">
+                <string>Total Sqm</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProTSENT"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_20">
+               <property name="text">
+                <string>Currency</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProCurrencyENT">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_24">
+               <property name="text">
+                <string>Comment</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProCommentENT">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit
+{
+max-height:30px;
+min-width: 500px;
+max-width: 2000px;
+
+	color: rgb(0, 0, 0);
+	font: bold 14pt &quot;Calibri&quot;;
+border: 1px solid rgb(85, 170, 255);
+}</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QTreeWidget" name="QuoProductTable">
+             <property name="focusPolicy">
+              <enum>Qt::ClickFocus</enum>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <property name="animated">
+              <bool>true</bool>
+             </property>
+             <attribute name="headerDefaultSectionSize">
+              <number>120</number>
+             </attribute>
+             <attribute name="headerStretchLastSection">
+              <bool>false</bool>
+             </attribute>
+             <column>
+              <property name="text">
+               <string notr="true">ID</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Type</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Code</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Name</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Unit</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Qty</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Rate</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Formula</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Total Lenght</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Extra 10 %</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>PCS</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Total Weight\Qty</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Amount</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="QuoProAddPBT">
+               <property name="text">
+                <string>Add</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="QuoProClosePBT">
+               <property name="text">
+                <string>Close</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_21">
+               <property name="text">
+                <string>Aluminium</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProTAluENT">
+               <property name="text">
+                <string>0</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_22">
+               <property name="text">
+                <string>Accessories</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProTAccENT">
+               <property name="text">
+                <string>0</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_25">
+               <property name="text">
+                <string>Amount</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="QuoProAmountENT">
+               <property name="text">
+                <string>0</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_2"/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>QuoProductCB</tabstop>
+  <tabstop>QuoProMRENT</tabstop>
+  <tabstop>QuoProWidthENT</tabstop>
+  <tabstop>QuoProHeightENT</tabstop>
+  <tabstop>QuoProQtyENT</tabstop>
+  <tabstop>QuoProVentCB</tabstop>
+  <tabstop>QuoProVHENT</tabstop>
+  <tabstop>QuoProHWVENT</tabstop>
+  <tabstop>QuoProVSENT</tabstop>
+  <tabstop>QuoProTHWVENT</tabstop>
+  <tabstop>QuoProTSWVENT</tabstop>
+  <tabstop>QuoProFixCB</tabstop>
+  <tabstop>QuoProFHENT</tabstop>
+  <tabstop>QuoProHWFENT</tabstop>
+  <tabstop>QuoProFSENT</tabstop>
+  <tabstop>QuoProTHWFENT</tabstop>
+  <tabstop>QuoProTSWFENT</tabstop>
+  <tabstop>QuoProHWVFENT</tabstop>
+  <tabstop>QuoProTHWVFENT</tabstop>
+  <tabstop>QuoProTSWVFENT</tabstop>
+  <tabstop>QuoProGlassCB</tabstop>
+  <tabstop>QuoProGlassrateENT</tabstop>
+  <tabstop>QuoProTWENT</tabstop>
+  <tabstop>QuoProTHENT</tabstop>
+  <tabstop>QuoProTSENT</tabstop>
+  <tabstop>QuoProCurrencyENT</tabstop>
+  <tabstop>QuoProCommentENT</tabstop>
+  <tabstop>QuoProTAluENT</tabstop>
+  <tabstop>QuoProTAccENT</tabstop>
+  <tabstop>QuoProAmountENT</tabstop>
+  <tabstop>QuoProAddPBT</tabstop>
+  <tabstop>QuoProClosePBT</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

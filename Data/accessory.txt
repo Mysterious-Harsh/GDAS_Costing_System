@@ -1,0 +1,116 @@
+0 00 Glass SQM
+1 01 Drill Bit 3 mm pkt
+2 01/A Drill Bit 3.5 mm pkt
+3 01/B Drill Bit 4 mm pkt
+4 01/C Drill Bit 5 mm pkt
+5 02 Wool Pile (7*5 Brushes) (300 mtr Roll) Roll
+6 02/A Wool Pile (8*6 Brushes) (300 mtr Roll) Roll
+7 02/B Wool Pile (10.5*7 Brushes) (300 mtr Roll) Roll
+8 04 Hinge (Stainless Steel) Nos
+9 04/A Hinge (Aluminium Black) Nos
+10 04/B Hinge (Aluminium Silver) Nos
+11 05 Hinge Nos
+12 06 Screw (13*6) (for lovers) kg
+13 06/A Screw (13*8) (for lovers) kg
+14 07 Screw (19*6) kg
+15 07/A Screw (75*8) (long thread)(For Partition) kg
+16 07/B Screw (75*8) (short thread)(For Partition) kg
+17 08 Screw (25*6) kg
+18 09 Screw (25*8) kg
+19 09/A Screw (38*8) kg
+20 09/B Screw (50*6)(shutter) kg
+21 10 Screw (60*6) kg
+22 10/A Self Taping Screw kg
+23 11 Double Sticky Tape (10X10) Pkt
+24 12 Double Sticky Tape (10X5) Pkt
+25 13/A Push Plate(9003) Pair
+26 13/B Push Plate(G2) Pair
+27 13/C Push Plate(G4) Pair
+28 14/A Wall Plug (S8) pkt
+29 14/B Wall Plug(S6) pkt
+30 14/C 8 MM Thread bar Nos
+31 14/D 6 MM Thread Bar Nos
+32 14/E 4MM Rivet pkt
+33 14/F Masking Tap (1”) Nos
+34 14/G Masking Tap (18mm) Nos
+35 14/M Measure Tap Nos
+36 15 Floor Spring Nos
+37 17 Double Side Crescent Lock (Black) Nos
+38 18 Double Side Crescent Lock (Silver) Nos
+39 18/A Double Side Crescent Lock (White) Nos
+40 19 Plastic Guiders For Shutter Pair
+41 21 Bronze Roller (Any Color can work) Nos
+42 22 Plastic Angle Nos
+43 23 Mosquito Net Guider Nos
+44 26 76 Roller Nos
+45 28 Screen Window Roller Nos
+46 29 Roller For Dubai Nos
+47 30 1200mm Height Mosquito Grey Net (Each Roll 30 Meters) mtr
+48 32 Door Handle (Black) Pair
+49 32/A Door Handle (White) Pair
+50 33 Door Handle Big (Black)(D) Pair
+51 33/A Door Handle Big (Black)(A) Pair
+52 34 Door Lock Roller Type Nos
+53 35 Sliding Door Lock(hook) Nos
+54 36 Window Lock for euro Nos
+55 36/A Window Lock A with key for euro Nos
+56 36/B Double Sides Lock for Sliding Door with key Nos
+58 38 Sliding Lock Dubai Nos
+59 38/A Double Side Sliding Lock Dubai Nos
+60 39 6mm Net Rubber (5kg Roll) Roll
+61 42/A 2.5mm One Side Rubber (5 kg Roll) Roll
+62 42 3mm One Side Rubber (5 kg Roll) Roll
+63 43 3.5mm One Side Rubber (5 kg Roll ) Roll
+64 44 4mm One Side Rubber (5 kg Roll ) Roll
+65 44/A 4.5mm One Side Rubber (5 kg Roll ) Roll
+66 45 5mm One Side Rubber (5 kg Roll ) Roll
+67 45/A 5.5mm One Side Rubber (5 kg Roll ) Roll
+68 46 6mm One Side Rubber (5 kg Roll ) Roll
+69 47 Rubber Euro Door (80 Mtr Roll) mtr
+70 48 Corner Joints (5mmX29mmX1mm) Nos
+71 49 Angle For Euro Shutter Nos
+72 51 PVC Lock Nos
+73 52 Euro Roller Nos
+74 52/A Roller for Europe Profile (Stainless) Nos
+75 52/C Single Euro Roller Nos
+78 57 Handle for Project Window (Black) Nos
+79 57/A Handle for Project Window (White) Nos
+80 58 Handle for Project Window (Black) Nos
+81 58/A Handle for Project Window (White) Nos
+82 59/A 13.5 Projectede Henges (W08) pair
+83 59 13.5 Projectede Henges (W10) pair
+84 59/B 20 Projectede Henges (W10) pair
+85 60 13.5 Projectede Henges (W12) pair
+86 60/A 20 Projectede Henges (W12) pair
+87 61 13.5 Projectede Henges (W14) pair
+88 61/A 20 Projectede Henges (W14) pair
+89 62 13.5 Projectede Henges (W16) pair
+90 62/A 20 Projectede Henges (W16) pair
+91 64 Standard Bolt Nos
+92 65 Big Corner Joint Nos
+93 66 Steel Angle for Door Profile Nos
+94 67 Door Lock (25mm Lock + 70mm Cylinder) Nos
+95 67/A One Sided Door Lock Lock for Door (25mm Lock + 70mm Cylinder) Nos
+96 68 Hinges for Euro Door Nos
+97 68/A Hinges for Euro Door Nos
+98 69 Mortise Lock Nos
+99 70 Door Lock (20mm Lock + 70mm Cylinder) Nos
+100 70/A One Sided Door Lock (20mm Lock + 70mm Cylinder) Nos
+101 72 Front Lock Cover pair
+102 73 Curtain Wall Handle 12" Nos
+103 73/A Curtain Wall Handle 6" Nos
+104 73/B Curtain Wall Handle 8" Nos
+105 79 Handle For Sliding Net Nos
+106 81/A Rivet Gun Nos
+107 81/B Mosquito Net Fitting Tool Nos
+108 100 Door closer Big Nos
+109 100/A Door closer medium Nos
+110 100/B Door closer small Nos
+111 109 Silicon Gun Nos
+112 109/A Silicon Tube Gun Nos
+113 110/A Silicon Black Nos
+114 110/B Silicon white Nos
+115 110/C Silicon Clear Nos
+116 111/A Structure Silicon Black Nos
+117 111/B Structure Silicon Greay Nos
+118 111/C Structure Silicon White Nos
